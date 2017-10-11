@@ -1,4 +1,14 @@
 <% @clubs.each do |club| %>
-	<h1><%= club[:club_name]%> <%=club.season %></h1>
-	<p><%= club[:stats]['goals']%>
+	<div class="col s4">
+		<div class="card">
+			<div class="card-image">
+				<%= link_to image_tag("https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"), club_path(club[:club_id]), target: "_blank" %>
+			</div>
+		<div class="card-content">
+			<span>
+				<a href=""><p><%= link_to club[:club_name], club_path(club[:club_id]), target: "_blank" %></p></a>
+			</span>
+		</div>
+	</div>
+	</div>
 <% end %>

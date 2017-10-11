@@ -10,49 +10,49 @@
 	<ul class="tabs">
 	    <li class="tab col s2 grandparent"><a href="#test1" style="color: <%= @club.primary_color %>">2012/13</a></li>
 	    <li class="tab col s2 grandparent"><a href="#test2" style="color: <%= @club.primary_color %>">2013/14</a></li>
-	    <li class="tab col s2 grandparent"><a href="#test3" style="color: <%= @club.primary_color %>">2014/15</a></li>
+	    <li class="tab col s2 grandparent"><a href="#test3" style="color: <%= @club.primary_color %>;">2014/15</a></li>
 	    <li class="tab col s2 grandparent"><a href="#test4" style="color: <%= @club.primary_color %>">2015/16</a></li>
 	    <li class="tab col s2 grandparent"><a href="#test5" style="color: <%= @club.primary_color %>">2016/17</a></li>
-	    <li class="tab col s2 disabled grandparent"><a href="#test6" style="color: <%= @club.primary_color %>">2017/18</a></li>
+	    <li class="tab col s2 disabled grandparent"><a href="#test6" style="color: #D3D3D3">2017/18</a></li>
 	  </ul>
 	<div id="test1">
 	  	<ul class="tabs">
 	        <li class="tab col s3"><a href="#Attack" style="color: <%= @club.primary_color %>">Attack</a></li>
-	        <li class="tab col s3"><a href="#Defense" style="color: <%= @club.primary_color %>">Team Play</a></li>
-	        <li class="tab col s3"><a href="#Team_Play" style="color: <%= @club.primary_color %>">Defense</a></li>
+	        <li class="tab col s3"><a href="#Team_Play" style="color: <%= @club.primary_color %>">Team Play</a></li>
+	        <li class="tab col s3"><a href="#Defense" style="color: <%= @club.primary_color %>">Defense</a></li>
 	        <li class="tab col s3"><a href="#Discipline" style="color: <%= @club.primary_color %>">Disicipline</a></li>
 	    </ul>
 	</div>
 	<div id="test2">
 	  	<ul class="tabs">
 	        <li class="tab col s3"><a href="#Attack2" style="color: <%= @club.primary_color %>">Attack</a></li>
-	        <li class="tab col s3"><a href="#Defense" style="color: <%= @club.primary_color %>">Team Play</a></li>
-	        <li class="tab col s3"><a href="#Team_Play" style="color: <%= @club.primary_color %>">Defense</a></li>
-	        <li class="tab col s3"><a href="#Discipline" style="color: <%= @club.primary_color %>">Disicipline</a></li>
+	        <li class="tab col s3"><a href="#Team_Play2" style="color: <%= @club.primary_color %>">Team Play</a></li>
+	        <li class="tab col s3"><a href="#Defense2" style="color: <%= @club.primary_color %>">Defense</a></li>
+	        <li class="tab col s3"><a href="#Discipline2" style="color: <%= @club.primary_color %>">Disicipline</a></li>
 	    </ul>
 	</div>
 	<div id="test3">
 	  	<ul class="tabs">
 	        <li class="tab col s3"><a href="#Attack3" style="color: <%= @club.primary_color %>">Attack</a></li>
-	        <li class="tab col s3"><a href="#Defense" style="color: <%= @club.primary_color %>">Team Play</a></li>
-	        <li class="tab col s3"><a href="#Team_Play" style="color: <%= @club.primary_color %>">Defense</a></li>
-	        <li class="tab col s3"><a href="#Discipline" style="color: <%= @club.primary_color %>">Disicipline</a></li>
+	        <li class="tab col s3"><a href="#Team_Play3" style="color: <%= @club.primary_color %>">Team Play</a></li>
+	        <li class="tab col s3"><a href="#Defense3" style="color: <%= @club.primary_color %>">Defense</a></li>
+	        <li class="tab col s3"><a href="#Discipline3" style="color: <%= @club.primary_color %>">Disicipline</a></li>
 	    </ul>
 	</div>
 	<div id="test4">
 	  	<ul class="tabs">
 	        <li class="tab col s3"><a href="#Attack4" style="color: <%= @club.primary_color %>">Attack</a></li>
-	        <li class="tab col s3"><a href="#Defense" style="color: <%= @club.primary_color %>">Team Play</a></li>
-	        <li class="tab col s3"><a href="#Team_Play" style="color: <%= @club.primary_color %>">Defense</a></li>
-	        <li class="tab col s3"><a href="#Discipline" style="color: <%= @club.primary_color %>">Disicipline</a></li>
+	        <li class="tab col s3"><a href="#Team_Play4" style="color: <%= @club.primary_color %>">Team Play</a></li>
+	        <li class="tab col s3"><a href="#Defense4" style="color: <%= @club.primary_color %>">Defense</a></li>
+	        <li class="tab col s3"><a href="#Discipline4" style="color: <%= @club.primary_color %>">Disicipline</a></li>
 	    </ul>
 	</div>
 	<div id="test5">
 	  	<ul class="tabs">
 	        <li class="tab col s3"><a href="#Attack5" style="color: <%= @club.primary_color %>">Attack</a></li>
-	        <li class="tab col s3"><a href="#Defense" style="color: <%= @club.primary_color %>">Team Play</a></li>
-	        <li class="tab col s3"><a href="#Team_Play" style="color: <%= @club.primary_color %>">Defense</a></li>
-	        <li class="tab col s3"><a href="#Discipline" style="color: <%= @club.primary_color %>">Disicipline</a></li>
+	        <li class="tab col s3"><a href="#Team_Play5" style="color: <%= @club.primary_color %>">Team Play</a></li>
+	        <li class="tab col s3"><a href="#Defense5" style="color: <%= @club.primary_color %>">Defense</a></li>
+	        <li class="tab col s3"><a href="#Discipline5" style="color: <%= @club.primary_color %>">Disicipline</a></li>
 	    </ul>
 	</div>
 	<div id="Attack" class="grandchild">
@@ -67,6 +67,40 @@
 	        <li class="collection-item"><div>Big Chances Created<span class="secondary-content"><%= @club['2012/13']['big_chances_created']%></span></div></li>
 	    </ul>
 	</div>
+	<div id="Team_Play" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Passes<span class="secondary-content"><%= @club['2012/13']['Passes']%></span></div></li>
+	        <li class="collection-item"><div>Passes Per Match<span class="secondary-content"><%= @club['2012/13']['Passes Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Pass Accuracy<span class="secondary-content"><%= @club['2012/13']['Pass Accurancy %']%></span></div></li>
+	        <li class="collection-item"><div>Crosses<span class="secondary-content"><%= @club['2012/13']['Crosses']%></span></div></li>
+	        <li class="collection-item"><div>Cross Accuracy<span class="secondary-content"><%= @club['2012/13']['Cross Accuracy']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Defense" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Clean Sheets<span class="secondary-content"><%= @club['2012/13']['Clean Sheets']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded<span class="secondary-content"><%= @club['2012/13']['Goals Conceded']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded Per Match<span class="secondary-content"><%= @club['2012/13']['Goals Conceded Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Saves<span class="secondary-content"><%= @club['2012/13']['Saves']%></span></div></li>
+	        <li class="collection-item"><div>Tackles<span class="secondary-content"><%= @club['2012/13']['Tackles']%></span></div></li>
+	        <li class="collection-item"><div>Tackle Success %<span class="secondary-content"><%= @club['2012/13']['Tackle Success %']%></span></div></li>
+	        <li class="collection-item"><div>Blocked Shots<span class="secondary-content"><%= @club['2012/13']['Blocked Shots']%></span></div></li>
+	        <li class="collection-item"><div>Interceptions<span class="secondary-content"><%= @club['2012/13']['Interceptions']%></span></div></li>
+	        <li class="collection-item"><div>Clearances<span class="secondary-content"><%= @club['2012/13']['Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Headed Clearances<span class="secondary-content"><%= @club['2012/13']['Headed Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Aerial Duels Won<span class="secondary-content"><%= @club['2012/13']['Aerial Duels Won']%></span></div></li>
+	        <li class="collection-item"><div>Errors Leading To Goal<span class="secondary-content"><%= @club['2012/13']['Errors Leading To Goal']%></span></div></li>
+	        <li class="collection-item"><div>Own Goals<span class="secondary-content"><%= @club['2012/13']['Own Goals']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Discipline" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Yellow Cards<span class="secondary-content"><%= @club['2012/13']['Yellow Cards']%></span></div></li>
+	        <li class="collection-item"><div>Red Cards<span class="secondary-content"><%= @club['2012/13']['Red Cards']%></span></div></li>
+	        <li class="collection-item"><div>Fouls<span class="secondary-content"><%= @club['2012/13']['Fouls']%></span></div></li>
+	        <li class="collection-item"><div>Offsides<span class="secondary-content"><%= @club['2012/13']['Offsides']%></span></div></li>
+	    </ul>
+	</div>
 	<div id="Attack2" class="grandchild">
 		<ul class="collection">
 	        <li class="collection-item"><div>Goals<span class="secondary-content"><%= @club['2013/14']['goals']%></span></div></li>
@@ -77,6 +111,40 @@
 	        <li class="collection-item"><div>Shots On Target<span class="secondary-content"><%= @club['2013/14']['shots_on_target']%></span></div></li>
 	        <li class="collection-item"><div>Shot Accuracy<span class="secondary-content"><%= @club['2013/14']['shot_accuracy']%></span></div></li>
 	        <li class="collection-item"><div>Big Chances Created<span class="secondary-content"><%= @club['2013/14']['big_chances_created']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Team_Play2" class="grandchild">
+		<ul class="collection">
+			<li class="collection-item"><div>Passes<span class="secondary-content"><%= @club['2013/14']['Passes']%></span></div></li>
+	        <li class="collection-item"><div>Passes Per Match<span class="secondary-content"><%= @club['2013/14']['Passes Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Pass Accuracy<span class="secondary-content"><%= @club['2013/14']['Pass Accurancy %']%></span></div></li>
+	        <li class="collection-item"><div>Crosses<span class="secondary-content"><%= @club['2013/14']['Crosses']%></span></div></li>
+	        <li class="collection-item"><div>Cross Accuracy<span class="secondary-content"><%= @club['2013/14']['Cross Accuracy']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Defense2" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Clean Sheets<span class="secondary-content"><%= @club['2013/14']['Clean Sheets']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded<span class="secondary-content"><%= @club['2013/14']['Goals Conceded']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded Per Match<span class="secondary-content"><%= @club['2013/14']['Goals Conceded Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Saves<span class="secondary-content"><%= @club['2013/14']['Saves']%></span></div></li>
+	        <li class="collection-item"><div>Tackles<span class="secondary-content"><%= @club['2013/14']['Tackles']%></span></div></li>
+	        <li class="collection-item"><div>Tackle Success %<span class="secondary-content"><%= @club['2013/14']['Tackle Success %']%></span></div></li>
+	        <li class="collection-item"><div>Blocked Shots<span class="secondary-content"><%= @club['2013/14']['Blocked Shots']%></span></div></li>
+	        <li class="collection-item"><div>Interceptions<span class="secondary-content"><%= @club['2013/14']['Interceptions']%></span></div></li>
+	        <li class="collection-item"><div>Clearances<span class="secondary-content"><%= @club['2013/14']['Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Headed Clearances<span class="secondary-content"><%= @club['2013/14']['Headed Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Aerial Duels Won<span class="secondary-content"><%= @club['2013/14']['Aerial Duels Won']%></span></div></li>
+	        <li class="collection-item"><div>Errors Leading To Goal<span class="secondary-content"><%= @club['2013/14']['Errors Leading To Goal']%></span></div></li>
+	        <li class="collection-item"><div>Own Goals<span class="secondary-content"><%= @club['2013/14']['Own Goals']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Discipline2" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Yellow Cards<span class="secondary-content"><%= @club['2013/14']['Yellow Cards']%></span></div></li>
+	        <li class="collection-item"><div>Red Cards<span class="secondary-content"><%= @club['2013/14']['Red Cards']%></span></div></li>
+	        <li class="collection-item"><div>Fouls<span class="secondary-content"><%= @club['2013/14']['Fouls']%></span></div></li>
+	        <li class="collection-item"><div>Offsides<span class="secondary-content"><%= @club['2013/14']['Offsides']%></span></div></li>
 	    </ul>
 	</div>
 	<div id="Attack3" class="grandchild">
@@ -91,6 +159,40 @@
 	        <li class="collection-item"><div>Big Chances Created<span class="secondary-content"><%= @club['2014/15']['big_chances_created']%></span></div></li>
 	    </ul>
 	</div>
+	<div id="Team_Play3" class="grandchild">
+		<ul class="collection">
+			<li class="collection-item"><div>Passes<span class="secondary-content"><%= @club['2014/15']['Passes']%></span></div></li>
+	        <li class="collection-item"><div>Passes Per Match<span class="secondary-content"><%= @club['2014/15']['Passes Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Pass Accuracy<span class="secondary-content"><%= @club['2014/15']['Pass Accurancy %']%></span></div></li>
+	        <li class="collection-item"><div>Crosses<span class="secondary-content"><%= @club['2014/15']['Crosses']%></span></div></li>
+	        <li class="collection-item"><div>Cross Accuracy<span class="secondary-content"><%= @club['2014/15']['Cross Accuracy']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Defense3" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Clean Sheets<span class="secondary-content"><%= @club['2014/15']['Clean Sheets']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded<span class="secondary-content"><%= @club['2014/15']['Goals Conceded']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded Per Match<span class="secondary-content"><%= @club['2013/14']['Goals Conceded Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Saves<span class="secondary-content"><%= @club['2014/15']['Saves']%></span></div></li>
+	        <li class="collection-item"><div>Tackles<span class="secondary-content"><%= @club['2014/15']['Tackles']%></span></div></li>
+	        <li class="collection-item"><div>Tackle Success %<span class="secondary-content"><%= @club['2014/15']['Tackle Success %']%></span></div></li>
+	        <li class="collection-item"><div>Blocked Shots<span class="secondary-content"><%= @club['2014/15']['Blocked Shots']%></span></div></li>
+	        <li class="collection-item"><div>Interceptions<span class="secondary-content"><%= @club['2013/14']['Interceptions']%></span></div></li>
+	        <li class="collection-item"><div>Clearances<span class="secondary-content"><%= @club['2014/15']['Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Headed Clearances<span class="secondary-content"><%= @club['2014/15']['Headed Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Aerial Duels Won<span class="secondary-content"><%= @club['2014/15']['Aerial Duels Won']%></span></div></li>
+	        <li class="collection-item"><div>Errors Leading To Goal<span class="secondary-content"><%= @club['2014/15']['Errors Leading To Goal']%></span></div></li>
+	        <li class="collection-item"><div>Own Goals<span class="secondary-content"><%= @club['2014/15']['Own Goals']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Discipline3" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Yellow Cards<span class="secondary-content"><%= @club['2014/15']['Yellow Cards']%></span></div></li>
+	        <li class="collection-item"><div>Red Cards<span class="secondary-content"><%= @club['2014/15']['Red Cards']%></span></div></li>
+	        <li class="collection-item"><div>Fouls<span class="secondary-content"><%= @club['2014/15']['Fouls']%></span></div></li>
+	        <li class="collection-item"><div>Offsides<span class="secondary-content"><%= @club['2014/15']['Offsides']%></span></div></li>
+	    </ul>
+	</div>
 	<div id="Attack4" class="grandchild">
 		<ul class="collection">
 	        <li class="collection-item"><div>Goals<span class="secondary-content"><%= @club['2015/16']['goals']%></span></div></li>
@@ -103,6 +205,40 @@
 	        <li class="collection-item"><div>Big Chances Created<span class="secondary-content"><%= @club['2015/16']['big_chances_created']%></span></div></li>
 	    </ul>
 	</div>
+	<div id="Team_Play4" class="grandchild">
+		<ul class="collection">
+			<li class="collection-item"><div>Passes<span class="secondary-content"><%= @club['2015/16']['Passes']%></span></div></li>
+	        <li class="collection-item"><div>Passes Per Match<span class="secondary-content"><%= @club['2015/16']['Passes Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Pass Accuracy<span class="secondary-content"><%= @club['2015/16']['Pass Accurancy %']%></span></div></li>
+	        <li class="collection-item"><div>Crosses<span class="secondary-content"><%= @club['2015/16']['Crosses']%></span></div></li>
+	        <li class="collection-item"><div>Cross Accuracy<span class="secondary-content"><%= @club['2015/16']['Cross Accuracy']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Defense4" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Clean Sheets<span class="secondary-content"><%= @club['2015/16']['Clean Sheets']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded<span class="secondary-content"><%= @club['2015/16']['Goals Conceded']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded Per Match<span class="secondary-content"><%= @club['2015/16']['Goals Conceded Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Saves<span class="secondary-content"><%= @club['2015/16']['Saves']%></span></div></li>
+	        <li class="collection-item"><div>Tackles<span class="secondary-content"><%= @club['2015/16']['Tackles']%></span></div></li>
+	        <li class="collection-item"><div>Tackle Success %<span class="secondary-content"><%= @club['2015/16']['Tackle Success %']%></span></div></li>
+	        <li class="collection-item"><div>Blocked Shots<span class="secondary-content"><%= @club['2015/16']['Blocked Shots']%></span></div></li>
+	        <li class="collection-item"><div>Interceptions<span class="secondary-content"><%= @club['2015/16']['Interceptions']%></span></div></li>
+	        <li class="collection-item"><div>Clearances<span class="secondary-content"><%= @club['2015/16']['Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Headed Clearances<span class="secondary-content"><%= @club['2015/16']['Headed Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Aerial Duels Won<span class="secondary-content"><%= @club['2015/16']['Aerial Duels Won']%></span></div></li>
+	        <li class="collection-item"><div>Errors Leading To Goal<span class="secondary-content"><%= @club['2015/16']['Errors Leading To Goal']%></span></div></li>
+	        <li class="collection-item"><div>Own Goals<span class="secondary-content"><%= @club['2015/16']['Own Goals']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Discipline4" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Yellow Cards<span class="secondary-content"><%= @club['2015/16']['Yellow Cards']%></span></div></li>
+	        <li class="collection-item"><div>Red Cards<span class="secondary-content"><%= @club['2015/16']['Red Cards']%></span></div></li>
+	        <li class="collection-item"><div>Fouls<span class="secondary-content"><%= @club['2015/16']['Fouls']%></span></div></li>
+	        <li class="collection-item"><div>Offsides<span class="secondary-content"><%= @club['2015/16']['Offsides']%></span></div></li>
+	    </ul>
+	</div>
 	<div id="Attack5" class="grandchild">
 		<ul class="collection">
 	        <li class="collection-item"><div>Goals<span class="secondary-content"><%= @club['2016/17']['goals']%></span></div></li>
@@ -113,6 +249,40 @@
 	        <li class="collection-item"><div>Shots On Target<span class="secondary-content"><%= @club['2016/17']['shots_on_target']%></span></div></li>
 	        <li class="collection-item"><div>Shot Accuracy<span class="secondary-content"><%= @club['2016/17']['shot_accuracy']%></span></div></li>
 	        <li class="collection-item"><div>Big Chances Created<span class="secondary-content"><%= @club['2016/17']['big_chances_created']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Team_Play5" class="grandchild">
+		<ul class="collection">
+			<li class="collection-item"><div>Passes<span class="secondary-content"><%= @club['2016/17']['Passes']%></span></div></li>
+	        <li class="collection-item"><div>Passes Per Match<span class="secondary-content"><%= @club['2016/17']['Passes Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Pass Accuracy<span class="secondary-content"><%= @club['2016/17']['Pass Accurancy %']%></span></div></li>
+	        <li class="collection-item"><div>Crosses<span class="secondary-content"><%= @club['2016/17']['Crosses']%></span></div></li>
+	        <li class="collection-item"><div>Cross Accuracy<span class="secondary-content"><%= @club['2016/17']['Cross Accuracy']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Defense5" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Clean Sheets<span class="secondary-content"><%= @club['2016/17']['Clean Sheets']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded<span class="secondary-content"><%= @club['2016/17']['Goals Conceded']%></span></div></li>
+	        <li class="collection-item"><div>Goals Conceded Per Match<span class="secondary-content"><%= @club['2016/17']['Goals Conceded Per Match']%></span></div></li>
+	        <li class="collection-item"><div>Saves<span class="secondary-content"><%= @club['2016/17']['Saves']%></span></div></li>
+	        <li class="collection-item"><div>Tackles<span class="secondary-content"><%= @club['2016/17']['Tackles']%></span></div></li>
+	        <li class="collection-item"><div>Tackle Success %<span class="secondary-content"><%= @club['2016/17']['Tackle Success %']%></span></div></li>
+	        <li class="collection-item"><div>Blocked Shots<span class="secondary-content"><%= @club['2016/17']['Blocked Shots']%></span></div></li>
+	        <li class="collection-item"><div>Interceptions<span class="secondary-content"><%= @club['2016/17']['Interceptions']%></span></div></li>
+	        <li class="collection-item"><div>Clearances<span class="secondary-content"><%= @club['2016/17']['Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Headed Clearances<span class="secondary-content"><%= @club['2016/17']['Headed Clearances']%></span></div></li>
+	        <li class="collection-item"><div>Aerial Duels Won<span class="secondary-content"><%= @club['2016/17']['Aerial Duels Won']%></span></div></li>
+	        <li class="collection-item"><div>Errors Leading To Goal<span class="secondary-content"><%= @club['2016/17']['Errors Leading To Goal']%></span></div></li>
+	        <li class="collection-item"><div>Own Goals<span class="secondary-content"><%= @club['2016/17']['Own Goals']%></span></div></li>
+	    </ul>
+	</div>
+	<div id="Discipline5" class="grandchild">
+		<ul class="collection">
+	        <li class="collection-item"><div>Yellow Cards<span class="secondary-content"><%= @club['2016/17']['Yellow Cards']%></span></div></li>
+	        <li class="collection-item"><div>Red Cards<span class="secondary-content"><%= @club['2016/17']['Red Cards']%></span></div></li>
+	        <li class="collection-item"><div>Fouls<span class="secondary-content"><%= @club['2016/17']['Fouls']%></span></div></li>
+	        <li class="collection-item"><div>Offsides<span class="secondary-content"><%= @club['2016/17']['Offsides']%></span></div></li>
 	    </ul>
 	</div>
 </div>

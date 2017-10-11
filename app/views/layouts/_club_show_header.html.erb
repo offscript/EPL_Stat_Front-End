@@ -1,0 +1,22 @@
+<header>
+      <nav class="top-nav" style="background: <%= @club.primary_color %>"> <!-- Primary Color -->
+        <div class="container">
+          <div class="nav-wrapper"><a class="page-title" style="color: <%= @club.secondary_color %>"><%= @club.club_name %></a></div> <!-- Page Title ERB Secondary Color-->
+        </div>
+      </nav>
+
+
+		<!--EPL Lion Logo, look to the materialize website for how they do spacing in their 
+		sidenav-->
+
+      <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+
+      <ul id="nav-mobile" class="side-nav fixed" style="background: <%= @club.primary_color %>"> <!-- Primary Color -->
+        <img src="https://www.premierleague.com/resources/ver/i/elements/premier-league-logo-header.png">
+        <li class="bold"><a class="waves-effect waves-teal" style="color: <%= @club.secondary_color %>">Home</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" style="color: <%= @club.secondary_color %>">Clubs</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" style="color: <%= @club.secondary_color %>">Players</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" style="color: <%= @club.secondary_color %>">Head to Head</a></li>
+        <!-- li's secondary color -->
+      </ul>
+</header>
